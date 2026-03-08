@@ -1,11 +1,3 @@
-const navLinks = [
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Features", href: "#features" },
-  { label: "Science", href: "#science" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "FAQ", href: "#faq" },
-];
-
 export default function FooterSection() {
   const currentYear = new Date().getFullYear();
   const hostname =
@@ -28,21 +20,21 @@ export default function FooterSection() {
 
       <div className="relative" style={{ background: "oklch(0.1 0.015 230)" }}>
         <div className="container mx-auto px-6 py-12 lg:py-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
-            {/* Brand */}
-            <div className="md:col-span-1">
+          {/* 3-column grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 mb-10">
+            {/* Brand column */}
+            <div>
               <div className="mb-3">
                 <span className="font-display font-bold text-3xl tracking-tight gradient-text">
                   NUGΞN
                 </span>
               </div>
-              <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
+              <p className="text-muted-foreground text-sm leading-relaxed mb-5">
                 Precision nutrition powered by your DNA. Scientifically
                 validated, uniquely yours.
               </p>
-
               {/* Decorative dots */}
-              <div className="flex gap-1.5 mt-5">
+              <div className="flex gap-1.5">
                 {(
                   [
                     { color: "oklch(0.72 0.18 168)", delay: "0s" },
@@ -59,49 +51,72 @@ export default function FooterSection() {
               </div>
             </div>
 
-            {/* Nav links */}
+            {/* Legal column */}
             <div>
               <h4
-                className="text-xs font-semibold uppercase tracking-widest mb-4"
+                className="text-xs font-semibold tracking-widest uppercase mb-4"
                 style={{ color: "oklch(0.72 0.18 168)" }}
-              >
-                Platform
-              </h4>
-              <ul className="space-y-2.5">
-                {navLinks.map((link) => (
-                  <li key={link.href}>
-                    <a
-                      href={link.href}
-                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Legal / Contact */}
-            <div>
-              <h4
-                className="text-xs font-semibold uppercase tracking-widest mb-4"
-                style={{ color: "oklch(0.68 0.2 190)" }}
               >
                 Legal
               </h4>
               <ul className="space-y-2.5">
-                {[
-                  "Privacy Policy",
-                  "Terms of Service",
-                  "Data Security",
-                  "Contact Us",
-                ].map((item) => (
-                  <li key={item}>
-                    <span className="text-sm text-muted-foreground cursor-default">
-                      {item}
-                    </span>
-                  </li>
-                ))}
+                <li>
+                  <a
+                    href="#/privacy-policy"
+                    data-ocid="footer.privacy_link"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#/data-policy"
+                    data-ocid="footer.data_policy_link"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    Data Policy
+                  </a>
+                </li>
+                <li>
+                  <span className="text-xs text-muted-foreground opacity-60">
+                    GDPR Compliant
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Contact column */}
+            <div>
+              <h4
+                className="text-xs font-semibold tracking-widest uppercase mb-4"
+                style={{ color: "oklch(0.68 0.2 190)" }}
+              >
+                Contact
+              </h4>
+              <ul className="space-y-2">
+                <li>
+                  <span
+                    className="text-sm font-semibold"
+                    style={{ color: "oklch(0.88 0.05 200)" }}
+                  >
+                    NUGΞN
+                  </span>
+                </li>
+                <li>
+                  <span className="text-sm text-muted-foreground">
+                    Dt. Radhika Rastogi
+                  </span>
+                </li>
+                <li>
+                  <a
+                    href="tel:+91-9205255765"
+                    className="text-sm transition-colors hover:text-foreground"
+                    style={{ color: "oklch(0.68 0.2 190)" }}
+                  >
+                    +91-9205255765
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

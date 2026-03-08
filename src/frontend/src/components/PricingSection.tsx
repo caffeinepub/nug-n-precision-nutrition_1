@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Check, Zap } from "lucide-react";
 import { motion } from "motion/react";
 
@@ -62,10 +61,6 @@ const plans = [
 ];
 
 export default function PricingSection() {
-  const scrollToWaitlist = () => {
-    document.getElementById("waitlist")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section id="pricing" className="relative py-24 lg:py-32">
       <div
@@ -184,7 +179,7 @@ export default function PricingSection() {
                   />
 
                   {/* Features */}
-                  <ul className="space-y-3 flex-1 mb-8">
+                  <ul className="space-y-3 flex-1">
                     {plan.features.map((feature) => (
                       <li
                         key={feature}
@@ -198,30 +193,6 @@ export default function PricingSection() {
                       </li>
                     ))}
                   </ul>
-
-                  {/* CTA */}
-                  <Button
-                    className="w-full font-semibold rounded-xl py-5 transition-all duration-200"
-                    data-ocid={plan.ocid}
-                    style={
-                      plan.featured
-                        ? {
-                            background:
-                              "linear-gradient(135deg, oklch(0.72 0.18 168), oklch(0.65 0.2 190))",
-                            color: "oklch(0.09 0.01 230)",
-                            border: "none",
-                            boxShadow: "0 0 20px oklch(0.68 0.2 190 / 0.3)",
-                          }
-                        : {
-                            background: plan.bg,
-                            border: `1px solid ${plan.border}`,
-                            color: plan.color,
-                          }
-                    }
-                    onClick={scrollToWaitlist}
-                  >
-                    Get Started
-                  </Button>
                 </div>
               </div>
             </motion.div>
