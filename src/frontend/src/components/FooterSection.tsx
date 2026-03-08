@@ -94,9 +94,24 @@ export default function FooterSection() {
               >
                 Connect
               </h4>
-              <p className="text-sm text-muted-foreground">
-                Follow us on LinkedIn for updates.
-              </p>
+              <a
+                href="https://www.linkedin.com/in/radhika-rastogi"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-ocid="footer.linkedin_link"
+                className="block rounded-xl overflow-hidden border transition-opacity hover:opacity-80"
+                style={{
+                  borderColor: "oklch(0.28 0.04 240 / 0.5)",
+                  background: "oklch(0.14 0.02 235)",
+                }}
+              >
+                <img
+                  src="/assets/uploads/image_e281750a-b5e6-4f4b-9f98-32cfe8e6e8c120260308_012719-1-1.jpg"
+                  alt="Connect with Radhika Rastogi on LinkedIn"
+                  className="w-full object-contain"
+                  style={{ maxHeight: "280px" }}
+                />
+              </a>
             </div>
           </div>
 

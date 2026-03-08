@@ -47,8 +47,15 @@ export default function Navigation() {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <span className="font-display font-bold text-2xl tracking-tight gradient-text">
-            NUGΞN
+          <span id="ywpams" className="flex items-center">
+            <img
+              src="/assets/generated/nugen-logo-clean-transparent.dim_400x100.png"
+              alt="NUGΞN Logo"
+              className="h-10 w-auto object-contain"
+              style={{
+                filter: "drop-shadow(0 0 8px oklch(0.72 0.18 168 / 0.5))",
+              }}
+            />
           </span>
         </button>
 
