@@ -86,38 +86,17 @@ export default function FooterSection() {
               </ul>
             </div>
 
-            {/* Contact column */}
+            {/* Connect column */}
             <div>
               <h4
                 className="text-xs font-semibold tracking-widest uppercase mb-4"
                 style={{ color: "oklch(0.68 0.2 190)" }}
               >
-                Contact
+                Connect
               </h4>
-              <ul className="space-y-2">
-                <li>
-                  <span
-                    className="text-sm font-semibold"
-                    style={{ color: "oklch(0.88 0.05 200)" }}
-                  >
-                    NUGΞN
-                  </span>
-                </li>
-                <li>
-                  <span className="text-sm text-muted-foreground">
-                    Dt. Radhika Rastogi
-                  </span>
-                </li>
-                <li>
-                  <a
-                    href="tel:+91-9205255765"
-                    className="text-sm transition-colors hover:text-foreground"
-                    style={{ color: "oklch(0.68 0.2 190)" }}
-                  >
-                    +91-9205255765
-                  </a>
-                </li>
-              </ul>
+              <p className="text-sm text-muted-foreground">
+                Follow us on LinkedIn for updates.
+              </p>
             </div>
           </div>
 

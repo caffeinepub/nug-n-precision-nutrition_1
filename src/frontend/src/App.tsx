@@ -12,7 +12,6 @@ import Navigation from "./components/Navigation";
 import PricingSection from "./components/PricingSection";
 import PrivacyPolicyPage from "./components/PrivacyPolicyPage";
 import ScienceSection from "./components/ScienceSection";
-import TestimonialsSection from "./components/TestimonialsSection";
 import WaitlistSection from "./components/WaitlistSection";
 
 function getRoute(): string {
@@ -47,7 +46,6 @@ export default function App() {
             <HowItWorksSection />
             <FeaturesSection />
             <ScienceSection />
-            <TestimonialsSection />
             <PricingSection />
             <FAQSection />
             <WaitlistSection />

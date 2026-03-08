@@ -26,15 +26,6 @@ const ocids = [
   "testimonial.item.3",
 ];
 
-function getInitials(name: string) {
-  return name
-    .split(" ")
-    .map((n) => n[0])
-    .join("")
-    .toUpperCase()
-    .slice(0, 2);
-}
-
 export default function TestimonialsSection() {
   const { data: backendTestimonials } = useGetAllTestimonials();
 
@@ -142,29 +133,15 @@ export default function TestimonialsSection() {
                     "{testimonial.quote}"
                   </p>
 
-                  {/* Author */}
-                  <div className="flex items-center gap-3 relative z-10">
+                  {/* Verified badge */}
+                  <div className="flex items-center gap-2 relative z-10">
                     <div
-                      className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-semibold font-mono"
-                      style={{
-                        background: colors.bg,
-                        border: `1px solid ${colors.border}`,
-                        color: colors.text,
-                      }}
-                    >
-                      {getInitials(testimonial.name)}
-                    </div>
-                    <div>
-                      <div
-                        className="font-semibold text-sm"
-                        style={{ color: colors.text }}
-                      >
-                        {testimonial.name}
-                      </div>
-                      <div className="text-xs text-muted-foreground">
-                        NUGΞN User
-                      </div>
-                    </div>
+                      className="w-2 h-2 rounded-full"
+                      style={{ background: colors.text }}
+                    />
+                    <span className="text-xs text-muted-foreground">
+                      Verified NUGΞN User
+                    </span>
                   </div>
                 </div>
               </motion.div>

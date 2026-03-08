@@ -49,7 +49,7 @@ const features = [
     icon: FlaskConical,
     title: "Lab-Grade Accuracy",
     description:
-      "12 certified partner labs worldwide, with ISO/IEC 17025 accreditation. Clinical-grade sequencing accuracy in every report.",
+      "12 certified partner labs worldwide. Clinical-grade sequencing accuracy validated by independent third-party auditors in every report.",
     color: "oklch(0.68 0.2 190)",
     bg: "oklch(0.68 0.2 190 / 0.08)",
     border: "oklch(0.68 0.2 190 / 0.2)",

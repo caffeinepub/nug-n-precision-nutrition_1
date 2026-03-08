@@ -130,30 +130,6 @@ export default function HeroSection() {
             <ChevronDown size={18} className="ml-2 opacity-70" />
           </Button>
         </motion.div>
-
-        {/* Stats row */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.5 }}
-          className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto"
-        >
-          {[
-            { value: "500K+", label: "Genetic Markers" },
-            { value: "97%", label: "Plan Adherence" },
-            { value: "50+", label: "Studies Cited" },
-            { value: "12", label: "Partner Labs" },
-          ].map((stat) => (
-            <div key={stat.label} className="glass rounded-xl p-4 text-center">
-              <div className="font-display font-bold text-2xl mb-1 gradient-text">
-                {stat.value}
-              </div>
-              <div className="text-xs text-muted-foreground tracking-wide uppercase">
-                {stat.label}
-              </div>
-            </div>
-          ))}
-        </motion.div>
       </div>
 
       {/* Scroll indicator */}

@@ -47,12 +47,9 @@ export default function Navigation() {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <img
-            src="/assets/uploads/Gemini_Generated_Image_xukaxoxukaxoxuka-1.png"
-            alt="NUGΞN Logo"
-            className="h-10 w-auto group-hover:opacity-90 transition-opacity"
-            style={{ filter: "invert(1) brightness(2)" }}
-          />
+          <span className="font-display font-bold text-2xl tracking-tight gradient-text">
+            NUGΞN
+          </span>
         </button>
 
         {/* Desktop nav */}
