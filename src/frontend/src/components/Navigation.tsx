@@ -47,15 +47,17 @@ export default function Navigation() {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <span id="ywpams" className="flex items-center">
-            <img
-              src="/assets/generated/nugen-logo-clean-transparent.dim_400x100.png"
-              alt="NUGΞN Logo"
-              className="h-10 w-auto object-contain"
-              style={{
-                filter: "drop-shadow(0 0 8px oklch(0.72 0.18 168 / 0.5))",
-              }}
-            />
+          <span
+            className="font-display font-bold text-xl tracking-tight"
+            style={{
+              background:
+                "linear-gradient(135deg, oklch(0.72 0.18 168), oklch(0.65 0.2 190))",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}
+          >
+            NUGΞN
           </span>
         </button>
 

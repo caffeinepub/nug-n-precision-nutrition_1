@@ -20,12 +20,21 @@ export default function FooterSection() {
 
       <div className="relative" style={{ background: "oklch(0.1 0.015 230)" }}>
         <div className="container mx-auto px-6 py-12 lg:py-16">
-          {/* 3-column grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 mb-10">
+          {/* 2-column grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-10">
             {/* Brand column */}
             <div>
               <div className="mb-3">
-                <span className="font-display font-bold text-3xl tracking-tight gradient-text">
+                <span
+                  className="font-display font-bold text-2xl tracking-tight"
+                  style={{
+                    background:
+                      "linear-gradient(135deg, oklch(0.72 0.18 168), oklch(0.65 0.2 190))",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                  }}
+                >
                   NUGΞN
                 </span>
               </div>
@@ -84,34 +93,6 @@ export default function FooterSection() {
                   </span>
                 </li>
               </ul>
-            </div>
-
-            {/* Connect column */}
-            <div>
-              <h4
-                className="text-xs font-semibold tracking-widest uppercase mb-4"
-                style={{ color: "oklch(0.68 0.2 190)" }}
-              >
-                Connect
-              </h4>
-              <a
-                href="https://www.linkedin.com/in/radhika-rastogi-b9443a14a"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-ocid="footer.linkedin_link"
-                className="block rounded-xl overflow-hidden border transition-opacity hover:opacity-80"
-                style={{
-                  borderColor: "oklch(0.28 0.04 240 / 0.5)",
-                  background: "oklch(0.14 0.02 235)",
-                }}
-              >
-                <img
-                  src="/assets/uploads/image_e281750a-b5e6-4f4b-9f98-32cfe8e6e8c120260308_012719-1-1.jpg"
-                  alt="Connect with Radhika Rastogi on LinkedIn"
-                  className="w-full object-contain"
-                  style={{ maxHeight: "280px" }}
-                />
-              </a>
             </div>
           </div>
 
