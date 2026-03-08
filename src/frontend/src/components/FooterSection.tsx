@@ -95,7 +95,7 @@ export default function FooterSection() {
                 Connect
               </h4>
               <a
-                href="https://www.linkedin.com/in/radhika-rastogi"
+                href="https://www.linkedin.com/in/radhika-rastogi-b9443a14a"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-ocid="footer.linkedin_link"
